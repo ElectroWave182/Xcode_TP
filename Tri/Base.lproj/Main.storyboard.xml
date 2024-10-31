@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B6e-BY-ZLo">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Accueil-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tri" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perdu dans le tri sélectif ? On décode pour vous les couleurs des bacs de tri." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNF-Mi-h4d">
+                                <rect key="frame" x="16" y="117" width="361" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKw-To-RkF">
+                                <rect key="frame" x="99" y="306" width="195" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Déchets électroniques"/>
+                                <connections>
+                                    <segue destination="3YK-Xc-4bt" kind="show" id="IBu-ig-2uo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsE-9x-3z9">
+                                <rect key="frame" x="112" y="392" width="170" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Déchets plastiques"/>
+                                <connections>
+                                    <segue destination="igv-QZ-AeV" kind="show" id="QRt-G5-xIo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQQ-VY-J3D">
+                                <rect key="frame" x="108" y="497" width="177" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Déchets organiques"/>
+                                <connections>
+                                    <segue destination="jHK-m4-2ku" kind="show" id="nok-3K-R6H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vv8-qL-lcv">
+                                <rect key="frame" x="149" y="634" width="96" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Jeu du tri"/>
+                                <connections>
+                                    <segue destination="f5T-Gs-KrI" kind="show" id="3yL-na-V81"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ewaste_p" translatesAutoresizingMaskIntoConstraints="NO" id="at8-wG-EtK">
+                                <rect key="frame" x="-18" y="278" width="171" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plastic_h" translatesAutoresizingMaskIntoConstraints="NO" id="mKs-fq-rbI">
+                                <rect key="frame" x="233" y="368" width="172" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="organic_p" translatesAutoresizingMaskIntoConstraints="NO" id="gDp-ev-fAO">
+                                <rect key="frame" x="-43" y="462" width="221" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Accueil" id="drH-i8-my5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+        </scene>
+        <!--Déchets électroniques-->
+        <scene sceneID="Ygr-9u-SSc">
+            <objects>
+                <viewController id="3YK-Xc-4bt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Vh-xs-D5e">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ewaste_f" translatesAutoresizingMaskIntoConstraints="NO" id="d8Q-FD-1Vm">
+                                <rect key="frame" x="-63" y="160" width="518" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dN6-bG-wk6"/>
+                        <color key="backgroundColor" red="1" green="0.49500742632605876" blue="0.37614538647687845" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Déchets électroniques" id="Ud7-9D-Pyf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nwK-gK-DrB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2269.4656488549617" y="-642.25352112676057"/>
+        </scene>
+        <!--Jeu du tri-->
+        <scene sceneID="kUb-c9-fXT">
+            <objects>
+                <viewController id="f5T-Gs-KrI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="143-IH-x1y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bouteille" translatesAutoresizingMaskIntoConstraints="NO" id="X5Z-UI-KuG">
+                                <rect key="frame" x="16" y="150" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sachet" translatesAutoresizingMaskIntoConstraints="NO" id="joC-Hv-zLr">
+                                <rect key="frame" x="178" y="388" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telephone" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-Df-f1W">
+                                <rect key="frame" x="153" y="116" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pasteque" translatesAutoresizingMaskIntoConstraints="NO" id="D6s-wS-GiJ">
+                                <rect key="frame" x="107" y="252" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ewaste_p" highlightedImage="ewaste_h" translatesAutoresizingMaskIntoConstraints="NO" id="0Nr-bx-iZZ">
+                                <rect key="frame" x="-54" y="690" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plastic_p" highlightedImage="plastic_h" translatesAutoresizingMaskIntoConstraints="NO" id="QWe-wh-nrD">
+                                <rect key="frame" x="78" y="690" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="organic_p" highlightedImage="organic_h" translatesAutoresizingMaskIntoConstraints="NO" id="dTZ-jq-ZF8">
+                                <rect key="frame" x="206" y="690" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bouilloire" translatesAutoresizingMaskIntoConstraints="NO" id="6T1-T9-O0v">
+                                <rect key="frame" x="-70" y="296" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coquille" translatesAutoresizingMaskIntoConstraints="NO" id="IXB-jK-oCW">
+                                <rect key="frame" x="16" y="432" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="saG-lG-X6t"/>
+                        <color key="backgroundColor" red="0.36978178835367098" green="0.87598663015463918" blue="0.38415623815972488" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Jeu du tri" id="Tuc-mw-ATL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8K-wb-aTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330.5343511450383" y="606.33802816901414"/>
+        </scene>
+        <!--Déchets plastiques-->
+        <scene sceneID="Rme-Ua-vRw">
+            <objects>
+                <viewController id="igv-QZ-AeV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DYf-fe-6bN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plastic_f" translatesAutoresizingMaskIntoConstraints="NO" id="iQm-Of-Ium">
+                                <rect key="frame" x="-16" y="145" width="425" height="597"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4fp-Db-weD"/>
+                        <color key="backgroundColor" red="1" green="0.88485716068193909" blue="0.39676939952253343" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Déchets plastiques" id="Tg7-6I-cHU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dr6-F1-psJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3399.2366412213737" y="-394.36619718309862"/>
+        </scene>
+        <!--Déchets organiques-->
+        <scene sceneID="xlC-AK-ORM">
+            <objects>
+                <viewController id="jHK-m4-2ku" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j2S-C6-FEE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="organic_f" translatesAutoresizingMaskIntoConstraints="NO" id="FuI-bS-44V">
+                                <rect key="frame" x="-7" y="156" width="407" height="601"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bu0-ff-JDK"/>
+                        <color key="backgroundColor" red="0.47567654639175261" green="0.28185119477306714" blue="0.37079089807751708" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Déchets organiques" id="3lD-rR-lp3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="18H-vp-X8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3382.4427480916029" y="320.42253521126764"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bcy-ud-WYa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B6e-BY-ZLo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9KP-Qw-eb5">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Rmp-1m-n02"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfj-MG-HH2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bouilloire" width="500" height="400"/>
+        <image name="bouteille" width="225" height="358"/>
+        <image name="coquille" width="288" height="244"/>
+        <image name="ewaste_f" width="668" height="1208"/>
+        <image name="ewaste_h" width="634" height="825"/>
+        <image name="ewaste_p" width="634" height="825"/>
+        <image name="organic_f" width="600" height="1264"/>
+        <image name="organic_h" width="650" height="825"/>
+        <image name="organic_p" width="650" height="825"/>
+        <image name="pasteque" width="365" height="300"/>
+        <image name="plastic_f" width="640" height="1336"/>
+        <image name="plastic_h" width="650" height="800"/>
+        <image name="plastic_p" width="650" height="800"/>
+        <image name="sachet" width="450" height="501"/>
+        <image name="telephone" width="253" height="341"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
